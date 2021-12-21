@@ -1,1 +1,12 @@
-
+/* hex: d6fff6 231651 4dccbd 2374ab ff8484 */
+* {
+    margin: 0px;
+}
+#hero {
+    background-color: #2374ab;
+    color: #ff8484;
+}
+nav {
+    background-color: #231651;
+    color: #d6fff6;
+}
