@@ -8,5 +8,43 @@
 }
 nav {
     background-color: #231651;
+    font-family: montserrat;
+    display: flex;
+    height: 7%
+}
+nav h1{
     color: #d6fff6;
+    font-family: montserrat;
+    text-decoration: none;
+}
+.name a{
+    text-decoration: none;
+    color: #d6fff6;
+}
+.name a:hover{
+    color:#ff8484;
+    transition: all 0.5s ease-in;
+}
+ul {
+
+    list-style-type: none;
+    margin: 0 0 0 20px;
+    padding: 0;
+    overflow: hidden;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    text-decoration: none;
+    color:#2374ab;
+    padding: 10% 16px;
+}
+li a:hover {
+    background-color: #ff8484;
+}
+
+a:visited {
+    text-decoration: none;
 }

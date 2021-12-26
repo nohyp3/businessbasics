@@ -6,8 +6,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="description" content="Site to teach grade 10 business basics">
 <meta name="author" content="Andre Ke">
-<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="css/html5doctor-reset.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet"> 
 <link rel="stylesheet" href="styles.css">
 <!-- Facebook OpenGraph tags -->
 <meta property="og:title" content="Business Basics - Learn the basics of business">
@@ -24,20 +25,19 @@
 </head>
 <nav>
     <div id="logo">
-    <h1>Business Basics</h1>
+    <h1 class="name"><a href="index.html">Business Basics</a></h1>
     </div>
     <ul>
-        <li>Home</li>
-        <li>Learn</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li><a href="learn.html">Learn</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
     </ul>
 </nav>
 <div id="hero">
     <img src="images/undraw_business_plan_re_0v81.svg">
     <h1>Learn the basics of Business. Grade 10 level for all ages.</h1>
 </div>
-<div id="body">
+<body>
     <h1>Business Knowledge is important. So why make it boring?</h1>
     <h2>Look over our curriculumn</h2>
     <button>Here</button>
@@ -45,4 +45,7 @@
     <a>Unit 1</a>
     <a>Unit 2</a>
     <a>Unit 3</a>
-</div>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>  
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="scripts.js"></script>
+</body>
