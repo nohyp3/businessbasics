@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <head>
 <meta charset="UTF-8">
 <title>Business Basics - Learn the basics of business</title>
@@ -8,7 +10,7 @@
 <meta name="author" content="Andre Ke">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <!-- Facebook OpenGraph tags -->
 <meta property="og:title" content="Business Basics - Learn the basics of business">
@@ -23,19 +25,13 @@
 <meta name="twitter:title" content="Business Basics - Learn the basics of business">
 <meta name="twitter:description" content="Site to teach grade 10 business basics">
 </head>
-<nav>
-    <div id="logo">
-    <h1 class="name"><a href="index.html">Business Basics</a></h1>
-    </div>
-    <ul>
-        <li><a href="learn.html">Learn</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+<div id="nav"></div>
 <div id="hero">
     <img src="images/undraw_business_plan_re_0v81.svg">
+    <div>
     <h1>Learn the basics of Business. Grade 10 level for all ages.</h1>
+    <button><a href="learn.html">Explore</a></button>
+    </div>
 </div>
 <body>
     <h1>Business Knowledge is important. So why make it boring?</h1>
@@ -45,7 +41,10 @@
     <a>Unit 1</a>
     <a>Unit 2</a>
     <a>Unit 3</a>
-    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>  
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
-    <script src="scripts.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>  
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+    <script type="text/babel" src="scripts.js"></script>
 </body>
+</html>
+
