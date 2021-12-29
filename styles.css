@@ -75,3 +75,20 @@ body h2 {
     font-family: montserrat;
     font-weight: bold; 
 }
+#grid-container {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.grid-item {
+    color: #ff8484;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    font-family: montserrat;
+    background-color: #231651;
+}
+.grid-item:hover {
+    background-color: #461651;
+    cursor: pointer;
+}
