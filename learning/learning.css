@@ -1,0 +1,64 @@
+/* hex: d6fff6 231651 4dccbd 2374ab ff8484 */
+* {
+    margin: 0;
+}
+nav {
+    background-color: #231651;
+    font-family: montserrat;
+    height: 7%;
+}
+nav h1{
+    color: #d6fff6;
+    font-family: montserrat;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+}
+.name a{
+    text-decoration: none;
+    color: #d6fff6;
+}
+.name a:hover{
+    color:#ff8484;
+    transition: all 0.5s ease-in;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+  }
+
+li a {
+    display: block;
+    text-decoration: none;
+    color:#2374ab;
+    padding: 10% 16px;
+}
+li a:hover {
+    background-color: #ff8484;
+}
+
+a:visited {
+    text-decoration: none;
+}
+body h1{
+    font-family: montserrat;
+}
+#heading {
+    display: flex;
+    align-items: center;
+    background-color: #212124;
+    color: #4dccbd;
+    padding-left: 25%;
+}
+#heading img {
+    margin-left: 5%;
+}
+body{
+    
+}
