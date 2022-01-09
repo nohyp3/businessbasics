@@ -6,6 +6,8 @@ nav {
     background-color: #231651;
     font-family: montserrat;
     height: 7%;
+    position: fixed;
+    width:25%;
 }
 nav h1{
     color: #d6fff6;
@@ -54,7 +56,18 @@ body h1{
     align-items: center;
     background-color: #212124;
     color: #4dccbd;
-    padding-left: 25%;
+    margin-left: 25%;
+
+}
+#content {
+    padding-left: 30%;
+}
+#content h1 {
+    font-family: hind;
+    font-weight:bold;
+}
+#content p {
+    font-family: hind;
 }
 #heading img {
     margin-left: 5%;
