@@ -26,3 +26,19 @@ class NavBar extends React.Component {
   }
 const domContainer2 = document.getElementById('nav');
 ReactDOM.render(<NavBar />, domContainer2);
+class Quiz extends React.Component {
+  verifyAnswer(){
+
+  }
+  render() {
+    return (
+      <div class="quiz">
+        <h2>Question Here</h2>
+          <button onclick={this.verifyAnswer}>Option One</button>
+          <button onclick={this.verifyAnswer}>Option Two</button>
+          <button onclick={this.verifyAnswer}>Option Three</button>
+      </div>
+    )
+  }
+}
+ReactDOM.render(<Quiz />, document.getElementById('quiz'));

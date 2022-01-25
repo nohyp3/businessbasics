@@ -75,3 +75,6 @@ body h1{
 body{
     
 }
+.list{
+    list-style-type: disc !important;
+}
