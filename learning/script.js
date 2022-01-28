@@ -1,3 +1,4 @@
+
 class NavBar extends React.Component {
     render() {
       return (
@@ -26,19 +27,52 @@ class NavBar extends React.Component {
   }
 const domContainer2 = document.getElementById('nav');
 ReactDOM.render(<NavBar />, domContainer2);
-class Quiz extends React.Component {
-  verifyAnswer(){
 
+function Quiz() {
+  var currentQuestion = 0;
+  var showScore = false;
+  var score = 0;
+  var questions = 
+  [
+    {
+      question: "question 1",
+      answers: [{text:"ans1", isCorrect: false}, {text:"ans2", isCorrect: true},{text:"ans3", isCorrect: false},
+      {text:"ans4", isCorrect: false}]
+    },
+    {
+      question: "question 2",
+      answers: [{text:"ans1", isCorrect: false}, {text:"ans2", isCorrect: true},{text:"ans3", isCorrect: false},
+      {text:"ans4", isCorrect: false}]
+    },
+    {
+      question: "question 3",
+      answers: [{text:"ans1", isCorrect: false}, {text:"ans2", isCorrect: true},{text:"ans3", isCorrect: false},
+      {text:"ans4", isCorrect: false}]
+    }
+
+  ]
+  const handleClick = (isCorrect) => {
+    if(isCorrect){
+        alert("correct");
+    }
+    if(currentQuestion + 1 <= questions.length){
+      currentQuestion++;
+    }
+    else {
+      showScore = true;
+    }
   }
-  render() {
-    return (
-      <div class="quiz">
-        <h2>Question Here</h2>
-          <button onclick={this.verifyAnswer}>Option One</button>
-          <button onclick={this.verifyAnswer}>Option Two</button>
-          <button onclick={this.verifyAnswer}>Option Three</button>
-      </div>
-    )
-  }
+  return(
+    <div>
+    <h1>{questions[currentQuestion].question}</h1>
+    <h1>Score: {score}</h1>
+    <div className="answerPart">
+      {questions[currentQuestion].answers.map((answers, index) => (
+        <button onClick={() => handleClick(answers.isCorrect)}>{answers.text}</button>
+      ))}
+    </div>
+    </div>
+  )
 }
+const element = <Quiz />;
 ReactDOM.render(<Quiz />, document.getElementById('quiz'));
