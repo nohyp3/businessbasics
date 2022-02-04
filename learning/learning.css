@@ -61,6 +61,7 @@ body h1{
 }
 #content {
     padding-left: 30%;
+    height: 100%;
 }
 #content h1 {
     font-family: hind;
@@ -77,4 +78,13 @@ body{
 }
 .list{
     list-style-type: disc !important;
+}
+#terms {
+    position: static;
+    list-style-type: circle !important;
+}
+#terms li {
+    background-color: #4dccbd;
+    list-style-type: circle;
+    font-family: hind;
 }
