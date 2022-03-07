@@ -32,6 +32,10 @@ button {
     width: 95px;
     height: 40px;
 }
+#main {
+    height: 100vh;
+    font-family: roboto;
+}
 .name a{
     text-decoration: none;
     color: #d6fff6;
@@ -96,4 +100,27 @@ body h2 {
     width: 100%;
     background-color: #231651;
     height: 100vh;
+}
+#units {
+    display: flex;
+    justify-content:space-evenly;
+    flex-shrink: 3;
+    margin: 0px;
+    align-items: center;
+}
+#units li{
+    display: flex;
+    background-color: #000;
+    font-family: verdana;
+    font-size: 12px;
+    height: 40px;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+#units li:hover {
+    display: inherit;
+    height: 40px;
 }
