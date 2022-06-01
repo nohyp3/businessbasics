@@ -88,3 +88,28 @@ body{
     list-style-type: circle;
     font-family: hind;
 }
+
+/*quiz */
+#quiz {
+    border: 3px solid #4dccbd;
+    border-radius: 15px;
+    border-width: thick;
+    padding: 10px;
+    background-color:#2374ab;
+    font-family: montserrat;
+}
+@keyframes popout {
+    from{transform:scale(0)}
+    80%{transform:scale(1.2)}
+    to{transform:scale(1)}
+}
+@-webkit-keyframes popout {
+    from{-webkit-transform:scale(0)}
+    80%{-webkit-transform:scale(1.2)}
+    to{-webkit-transform:scale(1)}
+}
+#surprise {
+    position: absolute;
+    animation: popout 2s ease;
+}
+

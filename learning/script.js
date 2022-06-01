@@ -39,6 +39,7 @@ class Quiz extends React.Component {
 		this.getQuestion = this.getQuestion.bind(this);
 		this.getOptions = this.getOptions.bind(this);
 		this.validate = this.validate.bind(this);
+		this.checkEnd = this.checkEnd.bind(this);
 	}
 	getQuestion() {
 		var questions = ["what is a business?", "why are regulations important?", "what is an oliogopoly?", "congrats! check your score!", null]
@@ -70,21 +71,30 @@ class Quiz extends React.Component {
 		if(this.state.question != 4){
 		return (
 			<div>
-			<button onClick={this.validate} id="0">{options[this.state.question-1][0]}</button>
-			<button onClick={this.validate} id="1">{options[this.state.question-1][1]}</button>
+			<button onClick={this.validate} id="0">{options[this.state.question-1][0]}</button><br></br>
+			<button onClick={this.validate} id="1">{options[this.state.question-1][1]}</button><br></br>
 			<button onClick={this.validate} id="2">{options[this.state.question-1][2]}</button>
 			</div>
 		)
+		} else{
+			
+		}
+	}
+	checkEnd() {
+		if(this.state.question === 4){
+			return(
+				<h3 id="surprise">🎉</h3>
+			)
 		}
 	}
 	render() {
 		return(
-			<div>
+			<div id="quizbox">
 			<h2>Quiz</h2>
 			<h3>Score: {this.state.score}</h3>
-			<h3>{this.getQuestion()}</h3>
+			<h3 id="question">{this.getQuestion()}</h3>
 			{this.getOptions()}
-			
+			{this.checkEnd()}
 			</div>
 		)
 	}
